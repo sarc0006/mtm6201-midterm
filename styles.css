@@ -1,0 +1,536 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* =====================
+        MY STYLES
+========================*/
+
+/* ==========================
+        GENERAL STYLES
+=============================*/
+
+
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; /* 1 em = 14px */
+    line-height: 1.5;
+    color: black;
+}
+
+/* ==========================
+        WEELCOME SECION
+=============================*/
+
+h1 {
+    font-size: 71px;
+    line-height: 106px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* H3 H4 ...etc */ 
+
+p {
+    margin-bottom: 1em; /* 1 em = 14px */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background: #222222;
+}
+
+.container {
+    padding: 1em;
+}
+
+.logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo .pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a:link, 
+nav a:visited {
+    font-size: 18px;
+    color: #c78b07;
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.w-button{
+    font-size: 20px;
+    color: #c78b07;
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    animation-name: button;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+nav .current a:link, 
+nav .current a:visited, 
+.w-button{
+    color: #000000;
+    background: #c78b07;
+}
+
+form input[type=search] {
+    height: 40px;
+    width: 625px;
+    border-radius: 2px;
+    border-style: solid;
+} 
+
+form button {
+    background-color: transparent;
+    border-color: #b6800a;
+    border-style: solid;
+    height: 40px;
+    width: 38px;
+    float: right;
+}
+
+form img {
+    height: 20px;
+}
+
+.header-welcome {
+    background-image:url(../mtm6201-midterm/images/main-banner-blur.jpg);
+    background-size: cover;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.header-welcome .container {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.header-welcome button {
+    height: 94px;
+    width: 256px;
+    font-size: 21px;
+    background-color: #c78b07;
+    border-style: none;
+    animation-name: button;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* ==========================
+        ABOUT US SECION
+=============================*/
+
+.section-about {
+    background: white;
+    padding-bottom: 20px;
+}
+
+.about-video {
+    height: 240px;
+    width: 70vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 12px;
+}
+
+.about-text {
+    text-align: center;
+    color: #000000;
+    animation-name: about;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes about {
+    0%   {color: #000000;}
+    25%  {color: #c78b07;}
+    50%  {color: black;}
+    100% {color: #c78b07;}
+}
+
+@keyframes button {
+    from {background-color: #c78b07;}
+    to {background-color: #f6c354;}
+  }
+
+.about-content button {
+    height: 94px;
+    width: 70vw;
+    font-size: 21px;
+    background-color: #c78b07;
+    border-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: button;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+.about-content2 {
+    padding-top: 30px;
+    padding-right: 60px;
+}
+
+
+/* ==========================
+        CONTACT SECION
+=============================*/
+
+.section-contact {
+    margin-top: 23px;
+    animation-name: about;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.section-contact h2 {
+    margin-bottom: -11px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section-contact h3 {
+    margin-left: -11px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.section-contact input {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 658px;
+    height: 25px;
+    border-radius: 3px;
+    border-color: #848484;
+    border-style: solid;
+    border-width: thin;
+}
+
+.section-contact textarea {
+    margin-top: -15px;
+    width: 658px;
+    height: 140px;
+    border-radius: 3px;
+    border-color: #848484;
+    border-style: solid;
+}
+
+.section-contact input[type=submit] {
+    margin-top: 12px;
+    height: 33px;
+    width: 61px;
+    border-radius: 0%;
+    border-style: none;
+    background-color: #222222;
+    font-size: 21px;
+    color: #d39307;
+}
+
+iframe {
+    padding-top: 4px;
+    width: 100%;
+    height: 440px;
+}
+
+
+/* ==========================
+        FOOTER SECION
+=============================*/
+
+footer .container {
+    padding-top: 30px;
+    background-color: #222222;
+    height: 55px;
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+footer p, a{
+    color: #d29208;
+}
+/* ==========================
+        DESKTOP STYLES
+=============================*/
+
+@media screen and (min-width: 760px){
+
+    .container {
+        width: 706px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+
+    /* ==========================
+            WEELCOME SECION
+    =============================*/
+
+        .container {
+            width: 1168px;
+            padding: 0 16px;
+            margin: 0 auto;
+        }
+
+        nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 1.5em;
+        }
+
+        nav a:link, 
+        nav a:visited {
+            font-size: 16px;
+            color: #c78b07;
+            text-align: center;
+            width: 100%;
+            display: block;
+            text-decoration: none;
+            padding-top: 17px;
+            padding-bottom: 17px;
+            padding-left: 19px;
+            padding-right: 19px;
+        }
+
+        nav .current a:link, 
+        nav .current a:visited {
+            color: #000000;
+            background: #c78b07;
+        }
+
+        .logo {
+            background: none;
+            padding-left: 97px;
+            padding-bottom: 20px;
+        }
+
+        .logo .pic {
+            height: 70px;
+        }
+
+        form input[type=search]{
+            height: 37px;
+            width: 184px;
+        }
+
+        form button {
+            margin-right: 113px;
+            height: 37px;
+            width: 32px;
+        }
+
+        .header-welcome .container {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            margin-top: auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 1200px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .header-welcome {
+            background-image:url(../mtm6201-midterm/images/main-banner-blur.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 280px;
+        }
+
+    /* ==========================
+            ABOUT US SECION
+    =============================*/
+
+    .about-video {
+        float: right;
+        height: 240px;
+        width: 500px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+        margin-right: 12px;
+    }
+
+    .section-about {
+        background: white;
+        padding-bottom: 20px;
+    }
+
+    .about-content {
+        padding-top: 7px;
+        padding-right: 60px;
+    }
+
+    .about-content2 {
+        padding-top: 30px;
+        padding-right: 60px;
+    }
+    
+    .about-text {
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .about-content button {
+        height: 80px;
+        width: 500px;
+        font-size: 21px;
+        background-color: #c78b07;
+        border-style: none;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+
+    /* ==========================
+            CONTACT SECION
+    =============================*/
+
+
+    .section-contact h2 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .section-contact .container {
+        display: grid;
+        grid-template-columns: repeat(2, 487px);
+        grid-template-rows: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .map {
+        order: 1;
+    }
+
+    .section-contact input {
+        width: 460px;
+    }
+    
+    .section-contact textarea {
+        width: 460px;
+    }
+    
+    /* ==========================
+            FOOTER SECION
+    =============================*/
+
+    footer .container {
+        padding-top: 30px;
+        background-color: #222222;
+        height: 75px;
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+
+    footer p, footer a{
+        padding: 17px;
+        color: #d29208;
+    }
+    }
